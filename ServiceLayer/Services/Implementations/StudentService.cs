@@ -16,7 +16,7 @@ namespace ServiceLayer.Services.Implementations
         private int _count = 1;
         public Student Create(Student student, int groupId)
         {
-           
+           throw new NotImplementedException();
         }
 
         public void Delete(int id)

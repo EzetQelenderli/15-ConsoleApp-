@@ -15,7 +15,10 @@ namespace ServiceLayer.Services.Implementations
 
         private CourseGroupRepository _groupRepository;
         private int _count=1;
-       
+        public GroupService()
+        {
+            _groupRepository = new CourseGroupRepository();
+        }
         public CourseGroup Create(CourseGroup group)
         {
             group.Id = _count;

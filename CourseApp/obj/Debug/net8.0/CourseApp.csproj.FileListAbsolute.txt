@@ -1,0 +1,15 @@
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\bin\Debug\net8.0\CourseApp.exe
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\bin\Debug\net8.0\CourseApp.deps.json
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\bin\Debug\net8.0\CourseApp.runtimeconfig.json
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\bin\Debug\net8.0\CourseApp.dll
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\bin\Debug\net8.0\CourseApp.pdb
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.AssemblyInfoInputs.cache
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.AssemblyInfo.cs
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.csproj.CoreCompileInputs.cache
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.sourcelink.json
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.dll
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\refint\CourseApp.dll
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.pdb
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\CourseApp.genruntimeconfig.cache
+C:\Users\ezetq\source\repos\15-ConsoleApp-\CourseApp\obj\Debug\net8.0\ref\CourseApp.dll

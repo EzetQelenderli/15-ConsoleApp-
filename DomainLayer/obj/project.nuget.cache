@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TAyLW44ezCk=",
+  "dgSpecHash": "sEQPgVV5Hk8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Classtime.PC_6_213_2\\source\\repos\\15-CourseApp\\DomainLayer\\DomainLayer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\DomainLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ezetq\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\ezetq\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\ezetq\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
