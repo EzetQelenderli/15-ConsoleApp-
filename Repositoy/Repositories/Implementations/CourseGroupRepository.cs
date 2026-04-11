@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace RepositoryLayer.Repositories.Implementations
@@ -33,11 +34,10 @@ namespace RepositoryLayer.Repositories.Implementations
             throw new NotImplementedException();
         }
 
-        public CourseGroup Getbyid(int id)
+        public CourseGroup GetById(int id)
         {
-            throw new NotImplementedException();
+            return id !=null?  AppDbContext<CourseGroup>.datas.Find(x=>x.Id==id) : null;
         }
-
         public void Update(CourseGroup data)
         {
             throw new NotImplementedException();
@@ -51,6 +51,11 @@ namespace RepositoryLayer.Repositories.Implementations
             throw new NotImplementedException();
         }
         public void GetAllGroups(CourseGroup data)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CourseGroup Getbyid(int id)
         {
             throw new NotImplementedException();
         }

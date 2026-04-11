@@ -50,7 +50,10 @@ namespace ServiceLayer.Services.Implementations
 
         public CourseGroup GetById(int id)
         {
-            throw new NotImplementedException();
+            CourseGroup courseGroup = _groupRepository.GetById(id);
+            if (courseGroup is null) return null;
+
+            return courseGroup;
         }
 
         public List<CourseGroup> SearchByName(string room)

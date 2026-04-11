@@ -12,6 +12,7 @@ namespace CourseApp.Helpers
         {
             Console.ForegroundColor = color;
             Console.WriteLine( text);
+            Console.ResetColor();
         }
        
     }
