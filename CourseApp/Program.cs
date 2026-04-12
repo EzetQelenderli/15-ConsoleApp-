@@ -29,11 +29,21 @@ namespace CourseApp
                     {
                         case 1:
                             _courseGroupController.Create();
+                            goto SelectOption;
+                        case 3:
+                            _courseGroupController.Delete();
+                            goto SelectOption;
 
-                            break;
+
                         case 4:
                             _courseGroupController.GetById();
-                            break;
+                            goto SelectOption;
+
+                        case 5:
+                            _courseGroupController.GetAll();
+                            goto SelectOption;
+
+
                     }
 
 

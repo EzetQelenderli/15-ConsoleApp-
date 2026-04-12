@@ -9,9 +9,9 @@ namespace RepositoryLayer.Repositories.Interfaces
     public interface IRepositoriy<T>
     {
         void Create(T data);
-        void Update(T data);
+        void Update(T data,int id);
         void Delete(T data);
-        T Getbyid(int id);
+        T GetById(Predicate<T>predicate);
 
     }
 }

@@ -13,9 +13,6 @@ namespace DomainLayer.Entitties
         public string ?Teacher { get; set; }
         public int Room { get; set; }
 
-        public CourseGroup GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

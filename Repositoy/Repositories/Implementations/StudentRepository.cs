@@ -1,4 +1,6 @@
 ﻿using DomainLayer.Entitties;
+using RepositoryLayer.Data;
+using RepositoryLayer.Exceptions;
 using RepositoryLayer.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,7 +16,18 @@ namespace RepositoryLayer.Repositories.Implementations
     {
         public void Create(Student data)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                if (data is null) throw new NotFoundException("Student Not Found");
+
+                AppDbContext<Student>.datas.Add(data);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public void Delete(Student data)
@@ -22,12 +35,12 @@ namespace RepositoryLayer.Repositories.Implementations
             throw new NotImplementedException();
         }
 
-        public Student Getbyid(int id)
+        public Student GetById(Predicate<Student>predicate)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Student data)
+        public void Update(Student data,int id)
         {
             throw new NotImplementedException();
         }

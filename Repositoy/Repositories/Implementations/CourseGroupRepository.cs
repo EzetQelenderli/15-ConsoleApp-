@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace RepositoryLayer.Repositories.Implementations
 {
@@ -15,49 +16,50 @@ namespace RepositoryLayer.Repositories.Implementations
     {
         public void Create(CourseGroup data)
         {
+            
             try
             {
                 if (data is null) throw new NotFoundException("data not found");
                 AppDbContext<CourseGroup>.datas.Add(data);
-
-                
             }
             catch (Exception ex)
             {
 
                 Console.WriteLine(ex.Message);
             }
+
         }
 
         public void Delete(CourseGroup data)
         {
-            throw new NotImplementedException();
+            AppDbContext<CourseGroup>.datas.Remove(data);
         }
 
-        public CourseGroup GetById(int id)
+        public CourseGroup GetById(Predicate<CourseGroup>predicate)
         {
-            return id !=null?  AppDbContext<CourseGroup>.datas.Find(x=>x.Id==id) : null;
-        }
-        public void Update(CourseGroup data)
-        {
-            throw new NotImplementedException();
-        }
-        public void GetAllGroupsByTeacher(int age)
-        {
-            throw new NotImplementedException();
-        }
-        public void GetAllGroupsByRoom(CourseGroup data)
-        {
-            throw new NotImplementedException();
-        }
-        public void GetAllGroups(CourseGroup data)
-        {
-            throw new NotImplementedException();
+            return AppDbContext<CourseGroup>.datas.Find(predicate);
         }
 
-        public CourseGroup Getbyid(int id)
+        public void Update(CourseGroup data,int id)
         {
-            throw new NotImplementedException();
+
+            CourseGroup dbcourse = GetById(l => l.Id == data.Id);
+
+            if (dbcourse == null) return;
+
+            if (!string.IsNullOrEmpty(data.Name))
+            {
+                dbcourse.Name = data.Name;
+            }
+
+            if (data.Room > 0)
+            {
+                dbcourse.Room = data.Room;
+            }
+        }
+        public List<CourseGroup> GetAll(Predicate<CourseGroup>predicate)
+        {
+            return predicate!=null?AppDbContext<CourseGroup>.datas.FindAll(predicate):null;
         }
     }
 }

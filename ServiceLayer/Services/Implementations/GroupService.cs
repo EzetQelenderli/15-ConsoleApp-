@@ -12,8 +12,7 @@ namespace ServiceLayer.Services.Implementations
 {
     public class GroupService : IGroupService
     {
-
-        private CourseGroupRepository _groupRepository;
+        private CourseGroupRepository _groupRepository= new CourseGroupRepository();
         private int _count=1;
         public GroupService()
         {
@@ -30,12 +29,13 @@ namespace ServiceLayer.Services.Implementations
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            CourseGroup courseGroup=GetById(x=>x.Id==id);
+            _groupRepository.Delete(courseGroup);
         }
 
         public List<CourseGroup> GetAll()
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAll(i=>i.Id>0);
         }
 
         public List<CourseGroup> GetAllByRoomn(string room)
@@ -48,12 +48,9 @@ namespace ServiceLayer.Services.Implementations
             throw new NotImplementedException();
         }
 
-        public CourseGroup GetById(int id)
+        public CourseGroup GetById(Predicate<CourseGroup>predicate)
         {
-            CourseGroup courseGroup = _groupRepository.GetById(id);
-            if (courseGroup is null) return null;
-
-            return courseGroup;
+           return   _groupRepository.GetById( predicate);
         }
 
         public List<CourseGroup> SearchByName(string room)
@@ -61,9 +58,22 @@ namespace ServiceLayer.Services.Implementations
             throw new NotImplementedException();
         }
 
-        public CourseGroup Update(CourseGroup group)
+        public CourseGroup Update(CourseGroup group,int id)
         {
-            throw new NotImplementedException();
+            //var existGroup = _groupRepository.GetAll(x => x.Id == group.Id);
+
+            CourseGroup dbcourse= GetById(x=>x.Id==group.Id);
+
+            if (dbcourse is null) return null;
+
+            group.Id = id;
+
+            _groupRepository.Update(group,id);
+
+            return GetById(x=>x.Id==id);
+
+
+
         }
     }
 }

@@ -9,6 +9,7 @@
       "CourseApp/1.0.0": {
         "dependencies": {
           "DomainLayer": "1.0.0",
+          "RepositoryLayer": "1.0.0",
           "ServiceLayer": "1.0.0"
         },
         "runtime": {
