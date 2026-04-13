@@ -32,42 +32,43 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Delete(Student data)
         {
-            throw new NotImplementedException();
+            if (data == null) return;
+            AppDbContext<Student>.datas.Remove(data);
+        }
+            
+        
+
+        public List<Student> GetAll(Predicate<Student> predicate=null)
+        {
+            return predicate != null ? AppDbContext<Student>.datas.FindAll(predicate) : AppDbContext<Student>.datas;
+
         }
 
         public Student GetById(Predicate<Student>predicate)
         {
-            throw new NotImplementedException();
+            return predicate != null
+              ? AppDbContext<Student>.datas.Find(predicate) : null;
         }
 
-        public void Update(Student data,int id)
+        public void Update(int id,Student data)
         {
-            throw new NotImplementedException();
-        }
-        public void GetStudentById(Student data)
-        {
-            throw new NotImplementedException();
-        }
-        public void DeleteStudent(Student data)
-        {
-            throw new NotImplementedException();
-        }
-        public void GetStudentsByAge(Student data)
-        {
-            throw new NotImplementedException();
-        }
-        public void GetAllStudentsByGroupId(Student data)
-        {
-            throw new NotImplementedException();
-        }
-        public void SearchMethodForGroupsByName(Student data)
-        {
-            throw new NotImplementedException();
-        } 
-        public void SearchMethodForStudentsByNameOrSurname(Student data)
-        {
-            throw new NotImplementedException();
-        } 
+            Student? dbStudent =
+               AppDbContext<Student>.datas.Find(x => x.Id == id);
 
+            if (dbStudent == null) return;
+
+            if (!string.IsNullOrEmpty(data.Name))
+                dbStudent.Name = data.Name;
+
+            if (!string.IsNullOrEmpty(data.Surname))
+                dbStudent.Surname = data.Surname;
+
+            if ((data.Age!=null))
+                dbStudent.Age = data.Age;
+
+            if (data.Group > 0)
+                dbStudent.Group = data.Group;
+        }
+        
     }
 }

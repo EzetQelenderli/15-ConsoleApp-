@@ -13,6 +13,6 @@ namespace DomainLayer.Entitties
         public string Surname { get; set; }
         public int Age { get; set; }
         public int Group { get; set; }
-        public CourseGroup CourseGroup { get; set; }
+        public CourseGroup courseGroup { get; set; }
     }
 }

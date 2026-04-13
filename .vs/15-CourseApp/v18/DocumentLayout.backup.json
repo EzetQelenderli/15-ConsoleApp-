@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\servicelayer\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\courseapp\\controllers\\coursegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\controllers\\coursegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\courseapp\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\repositoy\\repositories\\implementations\\coursegrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|solutionrelative:repositoy\\repositories\\implementations\\coursegrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\domainlayer\\enums\\coursegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\enums\\coursegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\servicelayer\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,40 +35,12 @@
       "RelativeMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCC456E1-77D5-43C1-8B4A-C26BDCD6C0F6}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\domainlayer\\entitties\\coursegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\entitties\\coursegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\repositoy\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|solutionrelative:repositoy\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\repositoy\\repositories\\implementations\\coursegrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|solutionrelative:repositoy\\repositories\\implementations\\coursegrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\repositoy\\repositories\\interfaces\\irepositoriy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|solutionrelative:repositoy\\repositories\\interfaces\\irepositoriy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\domainlayer\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\repositoy\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267A5058-90B1-4396-8C95-317F2E209D73}|Repositoy\\RepositoryLayer.csproj|solutionrelative:repositoy\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\courseapp\\controllers\\coursegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\controllers\\coursegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{170B2C04-75E1-4463-B3D8-3396D6469C39}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|c:\\users\\ezetq\\source\\repos\\15-consoleapp-\\domainlayer\\enums\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40279F4-C269-4E1F-A6C2-38A74382B338}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\enums\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,11 +50,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\CourseApp\\Helpers\\Helper.cs",
+              "RelativeDocumentMoniker": "CourseApp\\Helpers\\Helper.cs",
+              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\CourseApp\\Helpers\\Helper.cs",
+              "RelativeToolTip": "CourseApp\\Helpers\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:47:49.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Enums\\Student.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Enums\\Student.cs",
+              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Enums\\Student.cs",
+              "RelativeToolTip": "DomainLayer\\Enums\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:13:07.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourseGroup.cs",
+              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Enums\\CourseGroup.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\Enums\\CourseGroup.cs",
+              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Enums\\CourseGroup.cs",
+              "RelativeToolTip": "DomainLayer\\Enums\\CourseGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T06:12:48.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:59:47.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
               "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
@@ -70,155 +113,71 @@
               "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:50:33.633Z",
+              "WhenOpened": "2026-04-13T05:58:59.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:50:26.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Interfaces\\IGroupService.cs*",
-              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IGroupService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:49:23.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
-              "RelativeToolTip": "Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:45:34.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
               "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Implementations\\GroupService.cs*",
-              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\GroupService.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowD4AAABOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T16:41:19.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T05:10:13.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Common\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "DomainLayer\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Common\\BaseEntity.cs",
-              "RelativeToolTip": "DomainLayer\\Common\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:38:16.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseGroup.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Entitties\\CourseGroup.cs",
-              "RelativeDocumentMoniker": "DomainLayer\\Entitties\\CourseGroup.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\DomainLayer\\Entitties\\CourseGroup.cs",
-              "RelativeToolTip": "DomainLayer\\Entitties\\CourseGroup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:38:03.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Repositoy\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Repositoy\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:38:08.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "CourseGroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Implementations\\CourseGroupRepository.cs",
               "RelativeDocumentMoniker": "Repositoy\\Repositories\\Implementations\\CourseGroupRepository.cs",
               "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Implementations\\CourseGroupRepository.cs",
               "RelativeToolTip": "Repositoy\\Repositories\\Implementations\\CourseGroupRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T16:19:10.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IRepositoriy.cs",
-              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Interfaces\\IRepositoriy.cs",
-              "RelativeDocumentMoniker": "Repositoy\\Repositories\\Interfaces\\IRepositoriy.cs",
-              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Interfaces\\IRepositoriy.cs",
-              "RelativeToolTip": "Repositoy\\Repositories\\Interfaces\\IRepositoriy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:35:56.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "CourseGroupController.cs",
               "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\CourseApp\\Controllers\\CourseGroupController.cs",
               "RelativeDocumentMoniker": "CourseApp\\Controllers\\CourseGroupController.cs",
               "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\CourseApp\\Controllers\\CourseGroupController.cs",
               "RelativeToolTip": "CourseApp\\Controllers\\CourseGroupController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAIQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T15:05:41.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\CourseApp\\Program.cs",
               "RelativeDocumentMoniker": "CourseApp\\Program.cs",
               "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\CourseApp\\Program.cs",
               "RelativeToolTip": "CourseApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvykAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T12:04:55.2Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\ezetq\\source\\repos\\15-ConsoleApp-\\Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeToolTip": "Repositoy\\Repositories\\Implementations\\StudentRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:59:31.272Z"
             }
           ]
         }

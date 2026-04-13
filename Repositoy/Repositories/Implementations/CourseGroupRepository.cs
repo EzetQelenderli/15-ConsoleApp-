@@ -1,19 +1,16 @@
-﻿using DomainLayer.Entitties;
+﻿  using DomainLayer.Entitties;
 using RepositoryLayer.Data;
 using RepositoryLayer.Exceptions;
 using RepositoryLayer.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+
 
 namespace RepositoryLayer.Repositories.Implementations
 {
     public class CourseGroupRepository : IRepositoriy<CourseGroup>
     {
+        private List<CourseGroup> _data = new();
+        private readonly StudentRepository _studentRepository;
+        private readonly ICourseGroupService _groupService;
         public void Create(CourseGroup data)
         {
             
@@ -32,34 +29,45 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Delete(CourseGroup data)
         {
+            if (data == null) return;
             AppDbContext<CourseGroup>.datas.Remove(data);
         }
 
         public CourseGroup GetById(Predicate<CourseGroup>predicate)
         {
-            return AppDbContext<CourseGroup>.datas.Find(predicate);
+            return predicate!=null
+                ?AppDbContext<CourseGroup>.datas.Find(predicate):null;
         }
 
-        public void Update(CourseGroup data,int id)
+        public void Update(int id,CourseGroup data)
         {
 
-            CourseGroup dbcourse = GetById(l => l.Id == data.Id);
+            CourseGroup? dbCourse =
+               AppDbContext<CourseGroup>.datas.Find(x => x.Id == id);
 
-            if (dbcourse == null) return;
+            if (dbCourse == null) return;
 
             if (!string.IsNullOrEmpty(data.Name))
-            {
-                dbcourse.Name = data.Name;
-            }
+                dbCourse.Name = data.Name;
+
+            if (!string.IsNullOrEmpty(data.Teacher))
+                dbCourse.Teacher = data.Teacher;
 
             if (data.Room > 0)
-            {
-                dbcourse.Room = data.Room;
-            }
+                dbCourse.Room = data.Room;
         }
-        public List<CourseGroup> GetAll(Predicate<CourseGroup>predicate)
+        public List<CourseGroup> GetAll(Predicate<CourseGroup>predicate=null)
         {
-            return predicate!=null?AppDbContext<CourseGroup>.datas.FindAll(predicate):null;
+
+            return predicate != null ? AppDbContext<CourseGroup>.datas.FindAll(predicate) : AppDbContext<CourseGroup>.datas;
+
+
         }
+
+        
+    }
+
+    internal interface ICourseGroupService
+    {
     }
 }

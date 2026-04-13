@@ -13,8 +13,18 @@ namespace CourseApp
         static void Main(string[] args)
         {
             CourseGroupController _courseGroupController = new CourseGroupController();
-            helper.PrintConsole(ConsoleColor.Blue, "Select one option!");
-            helper.PrintConsole(ConsoleColor.Yellow, "1 - Create Group, 2- Update group   , 3 - Delete Group   , 4 - Get group  by id, 5 - Get all groups  by teacher , 6 - Get all groups by room, 7 - Get all groups   , 8 - Create Student  9 - Update Student   , 10- Get student  by id, 11 - Delete student,12 - Get students   by age, 13 - Get all students  by group id , 14- Search method for groups by name, 15 - Search method for students by name or surname.");
+            Helper.PrintConsole(ConsoleColor.Blue, "Select one option!");
+            Console.WriteLine("\n====== COURSE GROUP MENU ======");
+            Console.WriteLine("1. Create");
+            Console.WriteLine("2. Update");
+            Console.WriteLine("3. Delete");
+            Console.WriteLine("4. GetById");
+            Console.WriteLine("5. GetAll");
+            Console.WriteLine("6. GetAllByTeacherName");
+            Console.WriteLine("7. GetAllByRoom");
+            Console.WriteLine("8. SearchByName");
+            Console.WriteLine("0. Back");
+            Console.ResetColor();
             while (true)
             {
 
@@ -30,38 +40,41 @@ namespace CourseApp
                         case 1:
                             _courseGroupController.Create();
                             goto SelectOption;
-                        case 3:
+
+
+                        case 2:
                             _courseGroupController.Delete();
                             goto SelectOption;
 
-
-                        case 4:
+                        case 3:
                             _courseGroupController.GetById();
                             goto SelectOption;
-
-                        case 5:
+                        case 4:
                             _courseGroupController.GetAll();
                             goto SelectOption;
+                        //case 5:
+                        //    _courseGroupController.GetAllByTeacherName();
+                        //    goto SelectOption;
+                        //case 6:
+                        //    _courseGroupController.GetAllByRoom();
+                        //    goto SelectOption;
+                        //case 7:
+                        //    _courseGroupController.Exit();
+                        //    goto SelectOption;
+
 
 
                     }
 
 
-                }
-                else
-                {
-                    helper.PrintConsole(ConsoleColor.Red, "Please enter correct option type!");
-                    goto SelectOption;
 
                 }
             }
 
-
-
         }
     }
-
 }
+
 
 
 

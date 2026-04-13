@@ -2,6 +2,7 @@
 using DomainLayer.Entitties;
 using RepositoryLayer.Repositories.Implementations;
 using ServiceLayer.Services.Implementations;
+
 using ServiceLayer.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -12,25 +13,24 @@ namespace CourseApp.Controllers
 {
     internal class CourseGroupController
     {
-        
-         private CourseGroupService _courseGroupService = new CourseGroupService();
+
+        private CourseGroupService _courseGroupService = new CourseGroupService();
         private CourseGroupService _courseGroup;
         public CourseGroupController()
         {
             _courseGroup = new CourseGroupService();
         }
 
-
-
         public void Create()
         {
+
             GroupService _groupService = new GroupService();
 
-            helper.PrintConsole(ConsoleColor.Blue, "Add CourseGroup Name");
+            Helper.PrintConsole(ConsoleColor.Blue, "Add CourseGroup Name");
             string? courseGroupName = Console.ReadLine();
-            helper.PrintConsole(ConsoleColor.Blue, "Add Teacher Name");
+            Helper.PrintConsole(ConsoleColor.Blue, "Add Teacher Name");
             string? courseGroupTeacherName = Console.ReadLine();
-            helper.PrintConsole(ConsoleColor.Blue, "Add CourseGroup Room");
+            Helper.PrintConsole(ConsoleColor.Blue, "Add CourseGroup Room");
         groupRoom: string? courseGroupRoom = Console.ReadLine();
             int groupRoom;
             bool isgroupRoom = int.TryParse(courseGroupRoom, out groupRoom);
@@ -38,13 +38,13 @@ namespace CourseApp.Controllers
             {
                 CourseGroup coursegroup = new CourseGroup { Name = courseGroupName, Teacher = courseGroupTeacherName, Room = groupRoom };
                 _groupService.Create(coursegroup);
-                helper.PrintConsole(ConsoleColor.Green, $"Id:{coursegroup.Id}Name:{coursegroup.Name},Teacher Name:{coursegroup.Teacher},Room:{coursegroup.Room}");
+                Helper.PrintConsole(ConsoleColor.Green, $"Id:{coursegroup.Id}Name:{coursegroup.Name},Teacher Name:{coursegroup.Teacher},Room:{coursegroup.Room}");
             }
             else
             {
 
 
-                helper.PrintConsole(ConsoleColor.Red, "Please enter correct groupRoom type!");
+                Helper.PrintConsole(ConsoleColor.Red, "Please enter correct groupRoom type!");
                 goto groupRoom;
             }
 
@@ -52,7 +52,7 @@ namespace CourseApp.Controllers
         public void GetById()
         {
 
-        GroupId: helper.PrintConsole(ConsoleColor.Blue, "Ad CourseGroup Id");
+        GroupId: Helper.PrintConsole(ConsoleColor.Blue, "Ad CourseGroup Id");
             string courseGroupId = Console.ReadLine();
             int id;
             bool isCourseGroupId = int.TryParse(courseGroupId, out id);
@@ -63,19 +63,19 @@ namespace CourseApp.Controllers
 
                 if (courseGroup != null)
                 {
-                    helper.PrintConsole(ConsoleColor.Green, $"Id:{courseGroup.Id}Name:{courseGroup.Name},Teacher Name:{courseGroup.Teacher},Room:{courseGroup.Room}");
+                    Helper.PrintConsole(ConsoleColor.Green, $"Id:{courseGroup.Id}Name:{courseGroup.Name},Teacher Name:{courseGroup.Teacher},Room:{courseGroup.Room}");
 
                 }
                 else
                 {
-                    helper.PrintConsole(ConsoleColor.Red, "CourseGroup Not Found!!");
+                    Helper.PrintConsole(ConsoleColor.Red, "CourseGroup Not Found!!");
                     goto GroupId;
 
                 }
             }
             else
             {
-                helper.PrintConsole(ConsoleColor.Red, "Please enter correct CourseGroupId type!!");
+                Helper.PrintConsole(ConsoleColor.Red, "Please enter correct CourseGroupId type!!");
                 goto GroupId;
 
             }
@@ -88,17 +88,17 @@ namespace CourseApp.Controllers
             {
                 foreach (var course in courseGroups)
                 {
-                    helper.PrintConsole(ConsoleColor.Green, $"Course Id : {course.Id}, Name : {course.Name}, Teacher : {course.Teacher},Room:{course.Room}");
+                    Helper.PrintConsole(ConsoleColor.Green, $"Course Id : {course.Id}, Name : {course.Name}, Teacher : {course.Teacher},Room:{course.Room}");
                 }
             }
             else
             {
-                helper.PrintConsole(ConsoleColor.Red, "Please Create Course!");
+                Helper.PrintConsole(ConsoleColor.Red, "Please Create Course!");
             }
         }
         public void Delete()
         {
-        groupId: helper.PrintConsole(ConsoleColor.Blue, "Add Group Id");
+        groupId: Helper.PrintConsole(ConsoleColor.Blue, "Add Group Id");
 
             string groupId = Console.ReadLine();
 
@@ -109,30 +109,32 @@ namespace CourseApp.Controllers
             if (isLibraryId)
             {
                 CourseGroup courseGroup = _courseGroupService.GetById(id);
-                helper.PrintConsole(ConsoleColor.Red, $"{courseGroup.Name}CourseGroup delete succesfully!!");
+                Helper.PrintConsole(ConsoleColor.Red, $"{courseGroup.Name}CourseGroup delete succesfully!!");
                 if (courseGroup != null)
                 {
                     _courseGroupService.Delete(id);
                 }
                 else
                 {
-                    helper.PrintConsole(ConsoleColor.Red, "CourseGroup Not Found!!");
+                    Helper.PrintConsole(ConsoleColor.Red, "CourseGroup Not Found!!");
                     goto groupId;
 
                 }
             }
             else
             {
-                helper.PrintConsole(ConsoleColor.Red, "Add correct LibraryId type");
+                Helper.PrintConsole(ConsoleColor.Red, "Add correct LibraryId type");
                 goto groupId;
             }
 
         }
         public void Update()
         {
- 
+
         }
     }
-    
+
 }
+
+
 
