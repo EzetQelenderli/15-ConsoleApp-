@@ -15,12 +15,13 @@ namespace ServiceLayer.Services.Implementations
 {
     public class GroupService : IGroupService
     {
-        private CourseGroupRepository _groupRepository = new CourseGroupRepository();
-        private int _count = 1;
-        public GroupService()
+        private readonly CourseGroupRepository _groupRepository;
+        public GroupService(CourseGroupRepository groupRepository)
         {
-            _groupRepository = new CourseGroupRepository();
+            _groupRepository = groupRepository;
         }
+        private int _count = 1;
+       
         public CourseGroup Create(CourseGroup group)
         {
             group.Id = _count;
@@ -99,13 +100,13 @@ namespace ServiceLayer.Services.Implementations
                  !string.IsNullOrWhiteSpace(cg.Name) &&
                  cg.Name.Contains(name, StringComparison.OrdinalIgnoreCase));
 
-            //if (groups.Count == 0)
-            //    throw new EmptyListException("No groups found with the given keyword.");
+            if (groups.Count == 0)
+                throw new EmptyListException("No groups found with the given keyword.");
 
             return groups;
         }
 
-        public CourseGroup Update(CourseGroup group, int id)
+        public CourseGroup Update( int id,CourseGroup group)
         {
             if (id < 0)
                 throw new ArgumentNegativeException("Id has to be positive numbers!");
@@ -121,8 +122,13 @@ namespace ServiceLayer.Services.Implementations
                 bool nameExists = _groupRepository.GetAll()
                     .Any(g => g.Id != id && g.Name.Equals(group.Name, StringComparison.OrdinalIgnoreCase));
 
+                if (!string.IsNullOrWhiteSpace(group.Room))
+                    existingGroup.Room = group.Room;
 
-
+                if (!string.IsNullOrWhiteSpace(group.Teacher))
+                {
+                    existingGroup.Teacher = group.Teacher;
+                }
                 existingGroup.Name = group.Name;
 
 

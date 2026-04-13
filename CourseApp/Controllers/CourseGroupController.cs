@@ -13,12 +13,11 @@ namespace CourseApp.Controllers
 {
     internal class CourseGroupController
     {
-
-        private CourseGroupService _courseGroupService = new CourseGroupService();
-        private CourseGroupService _courseGroup;
+        private IGroupService _courseGroupService = new GroupService();
+        private GroupService _courseGroup;
         public CourseGroupController()
         {
-            _courseGroup = new CourseGroupService();
+            _courseGroup = new GroupService();
         }
 
         public void Create()
@@ -36,7 +35,7 @@ namespace CourseApp.Controllers
             bool isgroupRoom = int.TryParse(courseGroupRoom, out groupRoom);
             if (isgroupRoom)
             {
-                CourseGroup coursegroup = new CourseGroup { Name = courseGroupName, Teacher = courseGroupTeacherName, Room = groupRoom };
+                CourseGroup coursegroup = new CourseGroup { Name = courseGroupName, Teacher = courseGroupTeacherName, Room = courseGroupRoom };
                 _groupService.Create(coursegroup);
                 Helper.PrintConsole(ConsoleColor.Green, $"Id:{coursegroup.Id}Name:{coursegroup.Name},Teacher Name:{coursegroup.Teacher},Room:{coursegroup.Room}");
             }
@@ -89,6 +88,7 @@ namespace CourseApp.Controllers
                 foreach (var course in courseGroups)
                 {
                     Helper.PrintConsole(ConsoleColor.Green, $"Course Id : {course.Id}, Name : {course.Name}, Teacher : {course.Teacher},Room:{course.Room}");
+                    
                 }
             }
             else
@@ -128,11 +128,70 @@ namespace CourseApp.Controllers
             }
 
         }
-        public void Update()
+        public void Update(GroupService _groupService)
         {
+            Helper.PrintConsole(ConsoleColor.Cyan, "=== Update Course Group ===");
 
+            CourseGroup existingGroup = null;
+            int id;
+
+            while (true)
+            {
+                Console.Write("Enter group ID to update (or type 'Exit' to go back): ");
+                string input = Console.ReadLine();
+
+                if (input.Equals("exit", StringComparison.OrdinalIgnoreCase) || input.Equals("e", StringComparison.OrdinalIgnoreCase))
+                    return;
+
+                if (int.TryParse(input, out id))
+                {
+                    try
+                    {
+                        existingGroup = _groupService.GetById(id);
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        Helper.PrintConsole(ConsoleColor.Red, ex.Message);
+                    }
+                }
+                else
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "ID must be a valid number. Try again:");
+                }
+            }
+
+            Console.WriteLine($"Current Name: {existingGroup.Name}");
+            Console.Write("Enter new name (leave empty to keep current): ");
+            string newName = Helper.ReadLetterOrDigitUpdateString(existingGroup.Name, "Name is not valid. Enter again:");
+
+            Console.WriteLine($"Current Teacher: {existingGroup.Teacher}");
+            Console.Write("Enter new teacher name (leave empty to keep current): ");
+            string newTeacher = Helper.ReadValidatedUpdateString(existingGroup.Teacher, "Teacher name is not valid. Enter again:");
+
+            Console.WriteLine($"Current Room: {existingGroup.Room}");
+            Console.Write("Enter new room (leave empty to keep current): ");
+            string newRoom = Helper.ReadLetterOrDigitUpdateString(existingGroup.Room, "Room is not valid. Enter again:");
+            try
+            {
+                CourseGroup updatedData = new CourseGroup
+                {
+                    Name = newName,
+                    Teacher = newTeacher,
+                    Room = newRoom
+                };
+
+                _groupService.Update(id, updatedData);
+
+                Helper.PrintConsole(ConsoleColor.Green, "Group updated successfully!");
+            }
+            catch (Exception ex)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, ex.Message);
+            }
         }
     }
+    
 
 }
 

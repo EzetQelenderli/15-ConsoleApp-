@@ -17,7 +17,6 @@ namespace ServiceLayer.Services.Implementations
     {
         private readonly IGroupService _groupService;
         private StudentRepository _studentRepository;
-        private int _count = 1;
         public Student Create(Student student, int groupId)
         {
             var group = _groupService.GetById(groupId);

@@ -10,6 +10,7 @@ namespace RepositoryLayer.Repositories.Implementations
     {
         private List<CourseGroup> _data = new();
         private readonly StudentRepository _studentRepository;
+        private readonly CourseGroupRepository _groupRepository;
         private readonly ICourseGroupService _groupService;
         public void Create(CourseGroup data)
         {
@@ -53,7 +54,7 @@ namespace RepositoryLayer.Repositories.Implementations
             if (!string.IsNullOrEmpty(data.Teacher))
                 dbCourse.Teacher = data.Teacher;
 
-            if (data.Room > 0)
+            if (!string.IsNullOrEmpty(data.Room))
                 dbCourse.Room = data.Room;
         }
         public List<CourseGroup> GetAll(Predicate<CourseGroup>predicate=null)
